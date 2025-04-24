@@ -19,4 +19,15 @@ usethis::create_from_github(
 
 
 # reset changes commitend AND pushed already
+# We need the Terminal (NOT console) again.
 git reset --hard <SHA> #SHA is the code of the version
+
+#We need the Terminal (NOT console) again to delete a local branch
+git branch -d <BRANCH-NAME>
+
+#To delete a remote on GitHub branch
+git push origin --delete <BRANCH-NAME>
+
+
+
+
